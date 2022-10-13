@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEATHER</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/weather.css" media="screen and (orientation: landscape)">
+  <link rel="stylesheet" href="css/navigation.css" media="(orientation: landscape)">
+  <link rel="stylesheet" href="css/weather_mobile.css" media="(orientation: portrait)">
+  <link rel="stylesheet" href="css/navigation_mobile.css" media="(orientation: portrait)">
+</head>
+
+<body>
+  <header>
+    <section class="navigation">
+      <div class="nav_container">
+        <div class="logo">
+          <img src="img/logo.png" width="64">
+        </div>
+        <nav>
+          <ul class="nav_list">
+            <li><a href="weather.html">Home</a></li>
+            <li><a href="404.html">About</a></li>
+            <li><a href="SigIn.html">Sign In</a></li>
+            <li><a href="reg.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <script src="js/menu.js"></script>
+  </header>
+
+  <div class="header">
+    <h1>ПОГОДА</h1>
+    <div>
+      <input type="text" id="input" placeholder="Название города...">
+      <button id="search">Поиск</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="weather">
+      <h2 id="city">Велен, Темерия</h2>
+      <div class="temp_box">
+        <img src="../img/weather_icon/sunny.png" alt="Ясно" id="img">
+        <p id="temperature">26 ℃</p>
+      </div>
+      <span id="sun">Ясно</span>
+    </div>
+
+    <div class="divider1"></div>
+
+    <div class="forecastH">
+      <p class="cast_header">Прогноз на оставшийся день:</p>
+      <div class="templist">
+        <div class="next">
+          <div>
+            <p class="time">12:15</p>
+            <p>29 ℃ / 24 ℃</p>
+          </div>
+          <p class="desc">Ясно</p>
+        </div>
+        <div class="next">
+          <div>
+            <p class="time">15:15</p>
+            <p>31 ℃ / 26 ℃</p>
+          </div>
+          <p class="desc">Ясно</p>
+        </div>
+        <div class="next">
+          <div>
+            <p class="time">18:14</p>
+            <p>29 ℃ / 24 ℃</p>
+          </div>
+          <p class="desc">Ясно</p>
+        </div>
+        <div class="next">
+          <div>
+            <p class="time">21:15</p>
+            <p>29 ℃ / 24 ℃</p>
+          </div>
+          <p class="desc">Ясно</p>
+        </div>
+        <div class="next">
+          <div>
+            <p class="time">00:15</p>
+            <p>29 ℃ / 24 ℃</p>
+          </div>
+          <p class="desc">Ясно</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="forecastD">
+    <div class="divider2"></div>
+    <p class="cast_header">Прогноз на ближайшие 4 дня:</p>
+    <div class="weekF">
+      <div class="dayF">
+        <p class="date">Пт, 14.10.2022</p>
+        <p>29 ℃ / 24 ℃</p>
+        <p class="desc">Переменная облачность</p>
+      </div>
+      <div class="dayF">
+        <p class="date">Сб, 15.10.2022</p>
+        <p>29 ℃ / 24 ℃</p>
+        <p class="desc">Переменная облачность</p>
+      </div>
+      <div class="dayF">
+        <p class="date">Вс, 16.10.2022</p>
+        <p>29 ℃ / 24 ℃</p>
+        <p class="desc">Переменная облачность</p>
+      </div>
+      <div class="dayF">
+        <p class="date">Пн, 17.10.2022</p>
+        <p>29 ℃ / 24 ℃</p>
+        <p class="desc">Переменная облачность</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

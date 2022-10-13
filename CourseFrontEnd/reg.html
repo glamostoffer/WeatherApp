@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>register</title>
+  <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+  <h1>Sign Up!</h1>
+  <form class="reg_form">
+    <div>
+      <label>Your nickname: <input type="text" id="name" name="name" placeholder="nickname" required></label>
+    </div>
+    <div>
+      <label>Your email: <input type="email" id="email" name="email" placeholder="email" required></label></div>
+    <div>
+      Choose your gender:
+      <input type="radio" id="contactChoice1"
+             name="gender" value="female">
+      <label for="contactChoice1">Female</label>
+      <input type="radio" id="contactChoice2"
+             name="gender" value="male">
+      <label for="contactChoice2">Male</label>
+      <input type="radio" id="contactChoice3"
+             name="gender" value="other">
+      <label for="contactChoice2">Other</label>
+    </div>
+    <div>
+      <label>Date of birth: <input type="date" id="date" name="date" placeholder="mm.dd.yyyy"></label>
+    </div>
+    <div>
+      <label>I've read the policy of confident<input type="checkbox" required></label>
+    </div>
+    <button type="submit">Sign Up!</button>
+  </form>
+
+  <section class="video">
+    <div></div>
+    <video controls width="700" height="300">
+      <source src="https://www.youtube.com/watch?v=1wfeqDyMUx4">
+    </video>
+  </section>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+html {
+  height: 100%;
+}
+
+body {
+  padding: 55px 45px;
+  font-family: 'Roboto Slab', sans-serif;
+  background: linear-gradient(48deg, rgba(172, 135, 238, 0.34), rgba(255, 197, 74, 0.2)), url("../img/background_evening_clear.jpg"), no-repeat, fixed;
+  background-size: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-column-gap: 30px;
+  align-items: center;
+  margin: -20px 60px;
+  font-weight: bolder;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input {
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  padding: 8px 12px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: aliceblue;
+}
+
+#input:hover {
+  border: #000000 solid 2px;
+}
+
+#input:focus {
+  border: #000000 solid 2px;
+}
+
+#search {
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  padding: 8px 12px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background: aliceblue;
+  cursor: pointer;
+}
+
+#search:hover {
+  background: rgba(255, 197, 74, 0.86);
+  border: #000000 solid 2px;
+}
+
+.weather {
+  text-align: center;
+  margin-top: -112px;
+}
+
+.weather img {
+  width: 120px;
+  height: 120px;
+}
+
+#city {
+  font-size: 26px;
+}
+
+#temperature {
+  font-size: 40px;
+  margin: 4px 30px;
+}
+
+.temp_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#sun {
+  font-size: 20px;
+  background: rgba(255, 197, 74, 0.7);
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+.forecastH {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.next p {
+  margin: 4px 0;
+}
+
+.time {
+  color: aliceblue;
+  background: rgba(112, 48, 154, 0.7);
+  text-align: center;
+  padding: 1px 2px;
+  border-radius: 10px;
+}
+
+.desc {
+  font-weight: 800;/*не работает, походу из-за шрифта*/
+  font-size: 20px;
+}
+
+.forecastD .cast_header {
+  font-weight: bolder;
+  font-size: larger;
+  background: rgba(255, 197, 74, 0.74);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.cast_header {
+  width: max-content;
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+.divider1 {
+  /*background-image: url("../img/dragon_divider.png");*/
+  background: #222222;
+  height: 320px;
+  width: 3px;
+  border-radius: 3px;
+}
+
+.divider2 {
+  background: #222222;
+  height: 4q;
+  /*border: 1px solid #222222;*/
+  width: 460px;
+  border-radius: 3px;
+  margin: 32px auto;
+}
+
+.forecastD {
+  margin: 20px 50px;
+}
+
+.weekF {
+  color: rgba(227, 222, 222, 0.95);
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.dayF {
+  font-weight: bolder;
+  font-size: 17px;
+  margin-top: -8px;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.date {
+  letter-spacing: 1pt;
+}
